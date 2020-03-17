@@ -9,11 +9,11 @@ date:   2020-03-17 09:13:47 +0530
 
 
 
-## The Terminal
+## **The Terminal**
 
 The terminal is probably the most used application of any Linux user. You might have seen someone use the Linux Terminal and got intimidated by it, wondering what the heck are they doing and whats with the crazy amount of input / output going on. But you will eventually get familiar with the terminal realize that it actually make things easier.
 
-#### List of some handy commands
+#### **List of some handy commands**
 
 | Command      | Description                                        |
 | ------------ | -------------------------------------------------- |
@@ -56,11 +56,11 @@ Useful Tips:
 
 Shell scripts (files with .sh extension) are similar to batch scripts (files with .bat extension) in Windows. A shell scripts is simply a text file that contains sequence of commands that can be executed in the shell (the terminal). To run a shell script simply type `bash /path/to/script.sh` or make the script executable using `chmod` and run it directly.
 
-## How to install softwares
+## **How to install softwares**
 
 ​		Most of the Linux distributions come with their own application stores such as *Software Center* in Ubuntu. These stores have plenty of popular softwares. Apart from that you can also install softwares via installation packages such as .deb files (for Debian based distributions such as Ubuntu) or .rpm files or by using command line utilities such as apt or yum.
 
-#### Using apt to install softwares
+#### **Using apt to install softwares**
 
 ​		Using `apt` to install softwares is by probably the most popular method on Debian based distros such as Ubuntu. `apt` stands for Advanced Packaging Tool. It is a command line tool to install, update and remove packages.
 
@@ -104,11 +104,11 @@ Note: Only one instance of apt can be working at any time. If you try to use mul
 
 [Further References](https://itsfoss.com/apt-command-guide/)
 
-## Executables in Linux
+## **Executables in Linux**
 
 Unlike Windows where executable files have .exe extension, there is no such extension which makes a file executable. In fact in Linux any file can be executed. Linux uses file permissions to check if a file is executable.
 
-#### What are these file permissions?
+#### **What are these file permissions?**
 
 Linux is a multi-user operating system. It uses the concept of users and permissions to control what different user can do with a file or a directory.
 
@@ -134,21 +134,21 @@ Types of permissions:
 - `./hello.sh`: To execute it. Note: ./ refers to current working directory.
 - `sudo ./hello.sh`: If something like `'Permission denied'` appears. It implies that you need administrative or superuser access.
 
-## Where are my disk drives?
+## **Where are my disk drives?**
 
 ​	Unlike windows, Linux doesn't mount drives at different drive letters instead all partitions are mounted as folders withing root (top-level directory) usually in the media or mnt folder. Though you can easily access them using file browsers such as dolphin.
 
-##### Why can't I see my Linux partition in Windows?
+##### **Why can't I see my Linux partition in Windows?**
 
 Linux uses ext4 filesystem which is not supported by windows. Hence the Linux partition won't be visible among other drives. Though you can use softwares like *ext2fsd* if necessary.
 
-##### Why can't I open Windows partition in Linux?
+##### **Why can't I open Windows partition in Linux?**
 
 If you are dual-booting Linux alongside Windows you will often encounter problems opening windows partition in Linux. To solve this problem you need to do a full shutdown in Windows (do not hibernate) and disable fast boot.
 
 
 
-### Other FAQ's
+### **Other FAQ's**
 
 - How do I fix time difference in Linux and Windows dual-boot?
 
@@ -184,4 +184,4 @@ If you are dual-booting Linux alongside Windows you will often encounter problem
 
 
 
-PS: Will add more things later 
+PS: Will add more stuff later 
