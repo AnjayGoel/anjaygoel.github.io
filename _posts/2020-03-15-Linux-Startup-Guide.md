@@ -3,15 +3,15 @@ layout: post
 title:  "Linux Startup Guide"
 date:   2020-03-17 09:13:47 +0530
 ---
-​		I have been using Linux for quite a while now and I have become pretty comfortable with the operating system to an extent that I rarely use windows nowadays, apart from the photoshop and gaming stuff. Once you get used to Linux, you realize how awesome it is and why people especially developers prefer it over Windows. 
+​        I have been using Linux for quite a while now and I have become pretty comfortable with the operating system to an extent that I rarely use windows nowadays, apart from the photoshop and gaming stuff. Once you get used to Linux, you realize how awesome it is and why people especially developers prefer it over Windows. 
 
-​		But using Linux has a bit of a learning curve. Migrating from Windows to Linux, I often got stuck at several points like how do i install softwares, where are all my drives (C: , D: etc. ), Why does this OS look so ugly and how do I customize it, how do I use this command line etc. So I am writing this post to make Linux beginners a bit more familiar with the Linux environment.
+​        But using Linux has a bit of a learning curve. Migrating from Windows to Linux, I often got stuck at several points like how do i install softwares, where are all my drives (C: , D: etc. ), Why does this OS look so ugly and how do I customize it, how do I use this command line etc. So I am writing this post to make Linux beginners a bit more familiar with the Linux environment.
 
 
 
 ## **The Terminal**
 
-The terminal is probably the most used application of any Linux user. You might have seen someone use the Linux Terminal and got intimidated by it, wondering what the heck are they doing and whats with the crazy amount of input / output going on. But you will eventually get familiar with the terminal realize that it actually make things easier.
+​        The terminal is probably the most used application of any Linux user. You might have seen someone use the Linux Terminal and got intimidated by it, wondering what the heck are they doing and whats with the crazy amount of input / output going on. But you will eventually get familiar with the terminal realize that it actually make things easier.
 
 #### **List of some handy commands**
 
@@ -54,15 +54,15 @@ Useful Tips:
 
 #### **Shell Scripts**
 
-Shell scripts (files with .sh extension) are similar to batch scripts (files with .bat extension) in Windows. A shell scripts is simply a text file that contains sequence of commands that can be executed in the shell (the terminal). To run a shell script simply type `bash /path/to/script.sh` or make the script executable using `chmod` and run it directly.
+​        Shell scripts (files with .sh extension) are similar to batch scripts (files with .bat extension) in Windows. A shell scripts is simply a text file that contains sequence of commands that can be executed in the shell (the terminal). To run a shell script simply type `bash /path/to/script.sh` or make the script executable using `chmod` and run it directly.
 
 ## **How to install softwares**
 
-​		Most of the Linux distributions come with their own application stores such as *Software Center* in Ubuntu. These stores have plenty of popular softwares. Apart from that you can also install softwares via installation packages such as .deb files (for Debian based distributions such as Ubuntu) or .rpm files or by using command line utilities such as apt or yum.
+​        Most of the Linux distributions come with their own application stores such as *Software Center* in Ubuntu. These stores have plenty of popular softwares. Apart from that you can also install softwares via installation packages such as .deb files (for Debian based distributions such as Ubuntu) or .rpm files or by using command line utilities such as apt or yum.
 
 #### **Using apt to install softwares**
 
-​		Using `apt` to install softwares is by probably the most popular method on Debian based distros such as Ubuntu. `apt` stands for Advanced Packaging Tool. It is a command line tool to install, update and remove packages.
+​        Using `apt` to install softwares is by probably the most popular method on Debian based distros such as Ubuntu. `apt` stands for Advanced Packaging Tool. It is a command line tool to install, update and remove packages.
 
 ##### **Install a package**:
 
@@ -106,11 +106,11 @@ Note: Only one instance of apt can be working at any time. If you try to use mul
 
 ## **Executables in Linux**
 
-Unlike Windows where executable files have .exe extension, there is no such extension which makes a file executable. In fact in Linux any file can be executed. Linux uses file permissions to check if a file is executable.
+​        Unlike Windows where executable files have .exe extension, there is no such extension which makes a file executable. In fact in Linux any file can be executed. Linux uses file permissions to check if a file is executable.
 
 #### **What are these file permissions?**
 
-Linux is a multi-user operating system. It uses the concept of users and permissions to control what different user can do with a file or a directory.
+​        Linux is a multi-user operating system. It uses the concept of users and permissions to control what different user can do with a file or a directory.
 
 In Linux there are three type of users
 
@@ -136,7 +136,7 @@ Types of permissions:
 
 ## **Where are my disk drives?**
 
-​	Unlike windows, Linux doesn't mount drives at different drive letters instead all partitions are mounted as folders withing root (top-level directory) usually in the media or mnt folder. Though you can easily access them using file browsers such as dolphin.
+​      Unlike windows, Linux doesn't mount drives at different drive letters instead all partitions are mounted as folders withing root (top-level directory) usually in the media or mnt folder. Though you can easily access them using file browsers such as dolphin.
 
 ##### **Why can't I see my Linux partition in Windows?**
 
