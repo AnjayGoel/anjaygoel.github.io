@@ -3,9 +3,7 @@ layout: post
 title:  "Linux Startup Guide"
 date:   2020-03-17 09:13:47 +0530
 ---
-# Linux Startup Guide
-
-I have been using Linux for quite a while now and I have become pretty comfortable with the operating system to an extent that I rarely use windows nowadays, apart from the photoshop and gaming stuff. Once you get used to Linux, you realize how awesome it is and why people especially developers prefer it over Windows. 
+​		I have been using Linux for quite a while now and I have become pretty comfortable with the operating system to an extent that I rarely use windows nowadays, apart from the photoshop and gaming stuff. Once you get used to Linux, you realize how awesome it is and why people especially developers prefer it over Windows. 
 
 ​		But using Linux has a bit of a learning curve. Migrating from Windows to Linux, I often got stuck at several points like how do i install softwares, where are all my drives (C: , D: etc. ), Why does this OS look so ugly and how do I customize it, how do I use this command line etc. So I am writing this post to make Linux beginners a bit more familiar with the Linux environment.
 
@@ -54,7 +52,7 @@ Useful Tips:
 
 [Further References](https://help.ubuntu.com/community/UsingTheTerminal)
 
-#### Shell Scripts
+#### **Shell Scripts**
 
 Shell scripts (files with .sh extension) are similar to batch scripts (files with .bat extension) in Windows. A shell scripts is simply a text file that contains sequence of commands that can be executed in the shell (the terminal). To run a shell script simply type `bash /path/to/script.sh` or make the script executable using `chmod` and run it directly.
 
@@ -66,7 +64,7 @@ Shell scripts (files with .sh extension) are similar to batch scripts (files wit
 
 ​		Using `apt` to install softwares is by probably the most popular method on Debian based distros such as Ubuntu. `apt` stands for Advanced Packaging Tool. It is a command line tool to install, update and remove packages.
 
-##### Install a package:
+##### **Install a package**:
 
 To install a software package using apt, use the following command
 
@@ -76,25 +74,25 @@ for example:
 
 `sudo apt install vlc`
 
-##### Remove a package:
+##### **Remove a package:**
 
 To remove a package use the following command:
 
 `sudo apt remove <package_name>`
 
-##### Update the package index:
+##### **Update the package index:**
 
 The package index is basically a list of available software packages from the repositories defined in the */etc/apt/sources.list* file. To update this list use
 
 `sudo apt update`
 
-##### Upgrading packages:
+##### **Upgrading packages:**
 
 You can use the following command  to update the installed packages to their latest version.
 
 `sudo apt upgrade`
 
-##### Searching for packages:
+##### **Searching for packages:**
 
 To find a package use can use the search flag:
 
