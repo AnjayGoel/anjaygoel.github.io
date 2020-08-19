@@ -13,17 +13,15 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: .
-author: Anjay Goel
+title: Anjay Goel
 email: anjay.goel@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-permalink: /:title/
+permalink: /:categories/:title/
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://anjaygoel.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 linkedin_username: anjaygoel
 github_username:  AnjayGoel
 facebook_username: anjay.goel.23
-excerpt_separator: <!--end_excerpt-->
 
 # Build settings
 markdown: kramdown

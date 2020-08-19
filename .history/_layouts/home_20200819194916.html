@@ -14,18 +14,21 @@ layout: default
   <ul class="post-list">
     {% for category in site.categories %}
     <li>
-      <h3><a name="{{ category | first }}">{{ category | first }}<h3></a>
+      <h2><a name="{{ category | first }}">{{ category | first }}<h2></a>
         <ul>
           {% for post in category.last %}
           <li>
             {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
             <span class="post-meta">{{ post.date | date: date_format }}</span>
+
             <a class="post-link" href="{{ post.url | relative_url }}">
-              <h6>
-                {{ post.title | escape }}
-              </h6>
+              <h5>
+              {{ post.title | escape }}</h5>
             </a>
-            <span class="post-meta">{{post.excerpt}}</span>
+
+            {%- if site.show_excerpts -%}
+            {{ post.excerpt }}
+            {%- endif -%}
           </li>
           {% endfor %}
         </ul>
