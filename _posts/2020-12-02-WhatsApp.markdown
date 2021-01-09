@@ -40,4 +40,4 @@ PS: For those interested in [reading more about network effects](https://economi
 
 ### What Should I use then?
 
-[Signal](https://signal.org/en/) seems to be pretty popular. Its [open-source](https://github.com/signalapp), developed by a company founded by Brian Action (One of the two founders of WhatsApp) and is endorsed by the likes of Elon Musk, Edward Snowden, etc.
+[Signal](https://signal.org/en/) seems to be pretty popular. Its [open-source](https://github.com/signalapp), developed by a company founded by Brian Acton (One of the two founders of WhatsApp) and is endorsed by the likes of Elon Musk, Edward Snowden, etc.
