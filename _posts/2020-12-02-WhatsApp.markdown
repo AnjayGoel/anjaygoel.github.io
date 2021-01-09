@@ -12,7 +12,7 @@ WhatsApp is updating its privacy policy. And it's much worse than it looks. Time
 
 WhatsApp is updating its privacy policy which will come into effect from 8<sup>th</sup> Feb this year, enabling it to *share your data with Facebook*. Your only options are to accept the new privacy policy or delete your account. 
 
-​		For those living under a rock, Facebook acquired WhatsApp back in 2014. It also owns Instagram, making it the largest player among social media platforms by a large margin. With the new policy, it will be able to harvest and integrate user data from all the three major platforms. To put things into perspective, it will give Facebook access to data of *2 Billion WhatsApp active users*, while Facebook itself has reported a MAU (Monthly Active Users)  of around 2.7 Billion in Q2 2020.
+​		For those living under a rock, Facebook acquired WhatsApp back in 2014. It also owns Instagram, making it the largest player among social media platforms by a large margin. With the new policy, it will be able to harvest and integrate user data from all the three major platforms. To put things into perspective, it will give Facebook access to data of *2 Billion active WhatsApp users*, while Facebook itself has reported a MAU (Monthly Active Users)  of around 2.7 Billion in Q2 2020.
 
 ### But my chats are still encrypted, so what's the problem?
 
