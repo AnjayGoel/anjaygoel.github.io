@@ -2,7 +2,7 @@
 layout: post
 title:  "Hello World!"
 date:   2019-05-15 01:30:47 +0530
-category: Personal
+category: Blog
 ---
 <!--end_excerpt-->
 
