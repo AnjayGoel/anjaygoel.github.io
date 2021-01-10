@@ -8,6 +8,8 @@ WhatsApp is updating its privacy policy. And it's much worse than it looks. Time
 
 <!--end_excerpt-->
 
+**Edit:** WhatsApp has issued a statement statement clarifying that the new policy effects only business communication and doesn't change its data sharing policy with Facebook. The statement is *potentially misleading* the current [privacy policy](https://www.whatsapp.com/legal/privacy-policy)  includes a clause that states *you can choose not to have your WhatsApp account information shared with Facebook to improve your Facebook ads and products experiences.* but the [updated policy](https://www.whatsapp.com/legal/updates/) does not, ***which implies there is no way to opt out of sharing data with Facebook***
+
 ### What's happening?
 
 WhatsApp is updating its privacy policy which will come into effect from 8<sup>th</sup> Feb this year, enabling it to *share your data with Facebook*. Your only options are to accept the new privacy policy or delete your account. 
