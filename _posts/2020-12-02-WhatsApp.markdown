@@ -14,7 +14,7 @@ Uproar regarding WhatsApp's new privacy policy and why it is time to switch to b
 
 WhatsApp is updating its privacy policy which will come into effect from 8<sup>th</sup> Feb this year causing a uproar among its users due to *removal of a clause that allows people to opt out of sharing data with Facebook.* But what people must realise that *WhatsApp has been sharing data and meta-data of vast majority of its users (who chose not to opt out) with Facebook since 2016 (At the time WhatsApp had around 1 Billion users) and those who joined later (Around another 1 Billion).* And the option to opt-out has been long gone.
 
-​	For those living under a rock, Facebook acquired WhatsApp back in 2014. It also owns Instagram, making it the largest player among social media platforms by a large margin. With the new policy, it will be able to harvest and integrate user data from all the three major platforms. To put things into perspective, *WhatsApp has  2 Billion active users* , while Facebook itself has reported a MAU (Monthly Active Users)  of around 2.7 Billion in Q2 2020.
+​	For those living under a rock, Facebook acquired WhatsApp back in 2014. It also owns Instagram, making it the largest player among social media platforms by a large margin. With the privacy policy changes introduced in 2016, The company has been able to harvest and integrate user data from all the three major platforms. To put things into perspective, *WhatsApp has  2 Billion active users* , while Facebook itself has reported a MAU (Monthly Active Users)  of around 2.7 Billion in Q2 2020.
 
 ### But my chats are still encrypted, so what's the problem?
 
