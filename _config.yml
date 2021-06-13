@@ -24,7 +24,7 @@ tagline: Suggest Me A Title   # it will display as the sub-title
 description: >-
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: 'anjaygoel.github.io'
+url: 'https://anjaygoel.github.io'
 
 github:
   username: AnjayGoel             # change to your github username
