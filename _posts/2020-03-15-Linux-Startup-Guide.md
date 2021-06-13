@@ -6,7 +6,8 @@ category: Blog
 ---
 Windows To Linux Migration Guide
 <!--end_excerpt-->
-​        I have been using Linux for quite a while now and I have become pretty comfortable with the operating system to an extent that I rarely use windows nowadays, apart from the occasional photoshop and gaming stuff. Once you get used to Linux, you realize how awesome it is and why people especially developers prefer it over Windows. 
+
+​        I have been using Linux for quite a while now and I have become pretty comfortable with the operating system to an extent that I rarely use windows nowadays, apart from the occasional photoshop and gaming stuff. Once you get used to Linux, you realize how awesome it is and why people especially developers prefer it over Windows.
 
 ​        But using Linux has a bit of a learning curve. Migrating from Windows to Linux, I often got stuck at several points like how do i install softwares, where are all my drives (C: , D: etc. ), Why does this OS look so ugly and how do I customize it, how do I use this command line etc. So I am writing this post to make Linux beginners a bit more familiar with the Linux environment.
 
@@ -103,7 +104,7 @@ To find a package use can use the search flag:
 
 you can also use `apt show <package_name>` to get the description of the package. Note that you don't need to run this commands as sudo.
 
-Note: Only one instance of apt can be working at any time. If you try to use multiple instances of apt you will get error like 
+Note: Only one instance of apt can be working at any time. If you try to use multiple instances of apt you will get error like
 
 [Further References](https://itsfoss.com/apt-command-guide/)
 
@@ -181,10 +182,10 @@ If you are dual-booting Linux alongside Windows you will often encounter problem
 
 - How do I set proxy?
 
-  Most Linux distributions will have an option to set proxy in the networking section of the settings panel. You can set also export environment variables such as http_proxy, https_proxy to set command line proxy. For example `export HTTP_PROXY=user:pass@proxyserver:8080`. 
+  Most Linux distributions will have an option to set proxy in the networking section of the settings panel. You can set also export environment variables such as http_proxy, https_proxy to set command line proxy. For example `export HTTP_PROXY=user:pass@proxyserver:8080`.
 
   ​	Note: Utilities such as apt have their own proxy settings. To skip the hassle of setting several different proxies you can use [[this script]](https://github.com/thealphadollar/set_proxy).
 
 
 
-PS: Will add more stuff later 
+PS: Will add more stuff later
