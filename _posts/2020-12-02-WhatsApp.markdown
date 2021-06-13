@@ -5,7 +5,6 @@ date:   2021-01-09 20:51:47 +0530
 category: Blog
 ---
 Uproar regarding WhatsApp's new privacy policy and why it is time to switch to better and more privacy centered alternatives.
-
 <!--end_excerpt-->
 
 **Edit:** WhatsApp has issued a statement statement clarifying that the new policy effects only business communication and doesn't change its data sharing policy with Facebook. The statement is *potentially misleading*.  **WhatsApp has been sharing data with Facebook since 2016 for the vast majority of its users**. [This WIRED article](https://www.wired.com/story/whatsapp-facebook-data-share-notification/amp) explains the issue and current uproar clearly.
@@ -22,7 +21,7 @@ End to End encryption is not enough, it only ensures that the content of your me
 
 ### What information does WhatsApp collect?
 
-Please read the whole privacy policy [here](https://www.whatsapp.com/legal/updates/privacy-policy/?lang=en). 
+Please read the whole privacy policy [here](https://www.whatsapp.com/legal/updates/privacy-policy/?lang=en).
 
 **TL;DR** Parts to be worried about include *how you interact with others, your status information, location, and device information such as IP addresses, unique identifiers etc.*
 
