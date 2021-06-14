@@ -1,15 +1,12 @@
 ---
 layout: post
 title:  "Covid-19 India: How Reliable Are Official Figures? Analysing Death Registration Trends"
-date:   2021-06-14 01:50:00 +0530
+date:   2021-06-14 20:50:00 +0530
+tags: [covid,data-visualization]
+desc: "How Reliable Are Official Figures? You might have asked this to yourself at some point. Well, this post might give you some answers"
 category: Blog
 ---
-How Reliable Are Official Figures? You might have asked this to yourself at some point. Well this post might give you some answers
 <!--end_excerpt-->
-
-# Covid-19 India: How Reliable Are Official Figures? Analysing Death Registration Trends.
-
-
 
 **TL;DR**: You can [skip to the visualisations](#chennai) if you don't wanna read my ramblings.
 
