@@ -26,7 +26,7 @@ category: Blog
 
 ### **1. Covid Stats**:
 
-&ensp;For the Covid stats, I have used the data available at [Covid19India](covid19india.org). Although they have all the sources listed, if you are sceptical about it.
+&ensp;For the Covid stats, I have used the data available at [Covid19India](https://covid19india.org). Although they have all the sources listed, if you are sceptical about it.
 
 ### **2. Death Registrations**:
 
