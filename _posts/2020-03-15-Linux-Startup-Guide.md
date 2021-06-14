@@ -3,9 +3,9 @@ layout: post
 title:  "Linux Startup Guide"
 date:   2020-03-17 09:13:47 +0530
 category: Blog
+desc: "Windows To Linux Migration Guide"
 tags: [how-to, linux]
 ---
-Windows To Linux Migration Guide
 <!--end_excerpt-->
 
 ​        I have been using Linux for quite a while now and I have become pretty comfortable with the operating system to an extent that I rarely use windows nowadays, apart from the occasional photoshop and gaming stuff. Once you get used to Linux, you realize how awesome it is and why people especially developers prefer it over Windows.
