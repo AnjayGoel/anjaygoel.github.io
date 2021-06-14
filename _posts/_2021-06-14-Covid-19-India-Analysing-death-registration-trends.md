@@ -63,8 +63,6 @@ How Reliable Are Official Figures? You might have asked this to yourself at some
 
 ## Shut Up And Let The Data Speak
 
-
-___
 Okay so here we go
 
 ### Chennai
@@ -81,7 +79,7 @@ Fun fact, its the second oldest city civic body in the world after the City of L
 
 
 
-![Chennai Death Registrations 2016-Present](/assets/chennai_16_21.png)
+![Chennai Death Registrations 2016-Present](/assets/images/covid_19_india/chennai_16_21.png)
 
 
 
@@ -90,7 +88,7 @@ Fun fact, its the second oldest city civic body in the world after the City of L
 
 
 
-![Chennai Death Registrations 2020-2021](/assets/chennai_20_21.png)
+![Chennai Death Registrations 2020-2021](/assets/images/covid_19_india/chennai_20_21.png)
 
 
 
@@ -99,7 +97,7 @@ Fun fact, its the second oldest city civic body in the world after the City of L
 
 
 
-![Chennai Death Registrations 2021](/assets/chennai_21.png)
+![Chennai Death Registrations 2021](/assets/images/covid_19_india/chennai_21.png)
 
 
 
@@ -111,7 +109,7 @@ Fun fact, its the second oldest city civic body in the world after the City of L
 
 
 
-![Chennai Death Registrations Comparison with Covid Death Tolls](/assets/chennai_cmp.png)
+![Chennai Death Registrations Comparison with Covid Death Tolls](/assets/images/covid_19_india/chennai_cmp.png)
 
 
 
@@ -123,7 +121,7 @@ Fun fact, its the second oldest city civic body in the world after the City of L
 
 
 
-![Chennai Death Registrations Comparison with Covid Death Tolls](/assets/chennai_cmp_2.png)
+![Chennai Death Registrations Comparison with Covid Death Tolls](/assets/images/covid_19_india/chennai_cmp_2.png)
 
 
 
@@ -141,7 +139,7 @@ Okay, this one was tough to figure  out, apparently the "Kolkata District" cover
 
 
 
-![Kolkata Death Registrations 2016-Present](/assets/kolkata_16_21.png)
+![Kolkata Death Registrations 2016-Present](/assets/images/covid_19_india/kolkata_16_21.png)
 
 
 
@@ -151,7 +149,7 @@ Okay, this one was tough to figure  out, apparently the "Kolkata District" cover
 
 
 
-![Kolkata Death Registrations 2016-Present](/assets/kolkata_20_21.png)
+![Kolkata Death Registrations 2016-Present](/assets/images/covid_19_india/kolkata_20_21.png)
 
 
 
@@ -159,7 +157,7 @@ Okay, this one was tough to figure  out, apparently the "Kolkata District" cover
 
 
 
-![Kolkata Death Registrations 2016-Present](/assets/kolkata_21.png)
+![Kolkata Death Registrations 2016-Present](/assets/images/covid_19_india/kolkata_21.png)
 
 
 
@@ -169,7 +167,7 @@ Okay, this one was tough to figure  out, apparently the "Kolkata District" cover
 
 
 
-![Kolkata Death Registrations Comparison](/assets/kolkata_cmp.png)
+![Kolkata Death Registrations Comparison](/assets/images/covid_19_india/kolkata_cmp.png)
 
 
 
@@ -184,7 +182,7 @@ Lets add whole of West Bengal for comparison, just for fun:
 
 
 
-![Kolkata Death Registrations Comparison](/assets/kolkata_cmp_2.png)
+![Kolkata Death Registrations Comparison](/assets/images/covid_19_india/kolkata_cmp_2.png)
 
 
 
@@ -206,7 +204,7 @@ Lets add whole of West Bengal for comparison, just for fun:
 
 
 
-![Delhi Death Registrations 2016-Present](/assets/delhi_16_21.png)
+![Delhi Death Registrations 2016-Present](/assets/images/covid_19_india/delhi_16_21.png)
 
 
 
@@ -217,11 +215,11 @@ Lets add whole of West Bengal for comparison, just for fun:
 
 
 
-![Delhi Death Registrations 2020-2021](/assets/delhi_20_21.png)
+![Delhi Death Registrations 2020-2021](/assets/images/covid_19_india/delhi_20_21.png)
 
 
 
-![Delhi Death Registrations 2021-Present](/assets/delhi_21.png)
+![Delhi Death Registrations 2021-Present](/assets/images/covid_19_india/delhi_21.png)
 
 
 
@@ -234,7 +232,7 @@ Lets add whole of West Bengal for comparison, just for fun:
 
 
 
-![Delhi Death Registrations Comparison](/assets/delhi_cmp.png)
+![Delhi Death Registrations Comparison](/assets/images/covid_19_india/delhi_cmp.png)
 
 
 
@@ -252,7 +250,7 @@ Pre Covid Age Distribution (2016-2020) of Deceased.
 
 
 
-![Delhi Death Registrations Breakdown By Age](/assets/hist_delhi_16_20.png)
+![Delhi Death Registrations Breakdown By Age](/assets/images/covid_19_india/hist_delhi_16_20.png)
 
 
 
@@ -262,11 +260,11 @@ Pre Covid Age Distribution (2016-2020) of Deceased.
 
 
 
-  ![Delhi Death Registrations Breakdown By Age](/assets/hist_delhi_20_21.png)
+  ![Delhi Death Registrations Breakdown By Age](/assets/images/covid_19_india/hist_delhi_20_21.png)
 
 
 
-  ![Delhi Death Registrations Breakdown By Age](/assets/hist_delhi_21_present.png)
+  ![Delhi Death Registrations Breakdown By Age](/assets/images/covid_19_india/hist_delhi_21_present.png)
 
 
 
@@ -276,7 +274,7 @@ Pre Covid Age Distribution (2016-2020) of Deceased.
 
 
 
-![Delhi Death Registrations - Place of Death](/assets/delhi_place_of_death.png)
+![Delhi Death Registrations - Place of Death](/assets/images/covid_19_india/delhi_place_of_death.png)
 
 
 
