@@ -138,6 +138,9 @@ defaults:
 sass:
   style: compressed
 
+plugins:
+  - jemoji
+
 compress_html:
   clippings: all
   comments: all
