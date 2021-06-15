@@ -140,6 +140,7 @@ sass:
 
 plugins:
   - jemoji
+  - jekyll-seo-tag
 
 compress_html:
   clippings: all
