@@ -10,6 +10,8 @@ image:
 ---
 <!--end_excerpt-->
 
+**Update: 4th June '21**: Checkout the code used [here](https://github.com/AnjayGoel/Covid-19-Death-Registration-Trends).
+
 **TL;DR**: You can [skip to the visualisations](#chennai) if you don't wanna read my ramblings.
 
 &ensp;While the second wave of coronavirus may have died down, it raised several questions about our preparedness, lock-down and vaccination policies and among them is the question of reliability of official figures.
