@@ -113,7 +113,7 @@ It should be clear that decentralization and trustlessness are not binary states
 * Are you willing to give up simplicity, instantaneous transactions, and a lower transaction fee for the sake of decentralization?
 * In a decentralized environment, Who regulates the market and how? Who is accountable for what? 
 
-​	I simply fail to understand the intrinsic value of cryptocurrencies the need of such complex solutions of DeFi built around it just to mimic a proportion of what we can do with traditional approaches. Especially when some of these solutions go against the core ideas that made cryptocurrency famous in the first place. The current hype and misinformation around cryptocurrencies, blockchain technology, and new sh*t-coins popping up every day don't help either.
+​	I simply fail to understand the intrinsic value of cryptocurrencies and the need of such complex solutions of DeFi built around it just to mimic a proportion of what we can do with traditional approaches. Especially when some of these solutions go against the core ideas that made cryptocurrency famous in the first place. The current hype and misinformation around cryptocurrencies, blockchain technology, and new sh*t-coins popping up every day don't help either.
 
 ​	Sure, technologies built upon blockchain, like smart contracts, definitely have a lot of potential and use cases. Still, it is very easy to jump on the hype train. So it's crucial to critically examine the need and actual use cases of these innovations. Not every piece of technology needs to be adopted. If the cost and benefits are not analyzed properly, you may end up with an over-engineered product with little to no use.
 
