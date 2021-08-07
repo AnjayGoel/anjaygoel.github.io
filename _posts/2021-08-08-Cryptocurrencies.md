@@ -109,7 +109,7 @@ Let's take a look at another new buzzword, Decentralized Finance. Quoting from W
 It should be clear that decentralization and trustlessness are not binary states. And achieving them has several trade-offs and limitations. Now, It is time that you ask yourself some important questions:
 
 * How much decentralization and trustlessness do you need if any at all? 
-* What real-life problems does it actually solves?
+* What real-life problems does it actually solve? Do alternative solutions exist?
 * Are you willing to give up simplicity, instantaneous transactions, and a lower transaction fee for the sake of decentralization?
 * In a decentralized environment, Who regulates the market and how? Who is accountable for what? 
 
