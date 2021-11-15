@@ -39,7 +39,7 @@ image:
 
 * Keep the defaults in next sections and create the Virtual Machine.
 
-* Once the VM is ready, head to its overview and assign it a dns name (Under essentials section). Also under `settings->networking` add a new inbound port rule to open either port 80 or 443.
+* Once the VM is ready, head to its overview and assign it a DNS name (Under essentials section). Also under `settings->networking` add a new inbound port rule to open either port 80 or 443.
 
 * Now you can ssh into the vm using `$ ssh -i path/to/privatekey user@host_address`. A more convenient way is to add config details to the ssh config file (`~/.ssh/config`). The config will look something like this:  
 
