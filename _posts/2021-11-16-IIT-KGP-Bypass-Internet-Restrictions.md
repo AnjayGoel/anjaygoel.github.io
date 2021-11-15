@@ -105,4 +105,4 @@ image:
 
 ![Speed Test Results](/assets/images/iit_kgp_vpn/speed_test.png)
 
-The speed is more than enough for most people. I have used it to browse the web, stream content in full HD, and download torrents without any issues so far. And remember, you can choose to only use VPN on selected apps such as messaging apps, browsers, etc., and still enjoy full speeds on other apps.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The speed is more than enough for most people. I have used it to browse the web, stream content in full HD, and download torrents without any issues so far. And remember, you can choose to only use VPN on selected apps such as messaging apps, browsers, etc., and still enjoy full speeds on other apps.
