@@ -12,7 +12,9 @@ image:
 
 <!--end_excerpt-->
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The campus has finally reopened after nearly a year and a half. While most things look the same (apart from the lack of people, obviously), a few things have changed. One of them is internet access. My internet speed is now reaching up to 400 Mbps :-). But it comes at the cost of enhanced "security measures" as if the current restrictions were not annoying enough. 
+**Edit (17th Nov):** Added speed test for Central India based servers (at the bottom)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The campus has finally reopened after nearly a year and a half. While most things look the same (apart from the lack of people, obviously), a few things have changed. One of them is internet access. My internet speed is now reaching up to 500 Mbps :-). But it comes at the cost of enhanced "security measures" as if the current restrictions were not annoying enough. 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I spent nearly half an hour trying to debug why I can't ssh into a remote server (spoiler alert: I was on campus wifi). In another incident, I kept scratching my head about why I can't push commits to a remote repo only to realize that GitHub authentication has shifted to ssh. The hassle involved in using ssh on campus is nothing new. However, with these new measures, WhatsApp has completely stopped working (Yes, even WhatsApp web). This was the final nail on the coffin for reasons obvious to anyone familiar with online classes. While the usual workaround of VPN is working, most of the free, shady ones barely cross 2 Mbps and are a massive pain in the neck. So I decided to use the following workaround to set up my own VPN server using freebies provided by the GitHub student pack.
 
@@ -44,11 +46,11 @@ image:
 * Now you can ssh into the vm using `$ ssh -i path/to/privatekey user@host_address`. A more convenient way is to add config details to the ssh config file (`~/.ssh/config`). The config will look something like this:  
 
    ```
-   		Host <SomeName>
-           	HostName <Host Address>
-           	User <Username>
-           	IdentityFile /path/to/privatekey
-           	IdentitiesOnly yes
+   Host <SomeName>
+   	HostName <Host Address>
+   	User <Username>
+   	IdentityFile /path/to/privatekey
+   	IdentitiesOnly yes
    ```
    Then you can ssh simply by using `$ ssh SomeName`.   
 
@@ -101,8 +103,22 @@ image:
 
 ##  Final Speed Test:
 
-**Note**: I am using a VM from South-East Asia. A VM in Indian regions would probably give significantly higher speed.
+Speed test results for Central India based server:
+
+![Speed Test Results](/assets/images/iit_kgp_vpn/speed_test_2.png)
+
+
+
+Speed test results for South-East Asia. 
 
 ![Speed Test Results](/assets/images/iit_kgp_vpn/speed_test.png)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The speed is more than enough for most people. I have used it to browse the web, stream content in full HD, and download torrents without any issues so far. And remember, you can choose to only use VPN on selected apps such as messaging apps, browsers, etc., and still enjoy full speeds on other apps.
+
+### Ping in games:
+
+Ping in few games on Central India server:
+
+* Rocket League (Indian Server): 110 ms
+* Genshin Impact (Asian Server): 180 ms
+
