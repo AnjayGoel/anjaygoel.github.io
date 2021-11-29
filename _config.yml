@@ -147,7 +147,7 @@ defaults:
 plugins:
   - jemoji
   - jekyll-seo-tag
-
+  - jekyll-sitemap
 sass:
   style: compressed
 

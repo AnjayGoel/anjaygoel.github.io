@@ -122,6 +122,7 @@ PLATFORMS
 DEPENDENCIES
   html-proofer (~> 3.18)
   jekyll-seo-tag
+  jekyll-sitemap
   jekyll-theme-chirpy (~> 4.3, >= 4.3.4)
   jemoji
   tzinfo (~> 1.2)
