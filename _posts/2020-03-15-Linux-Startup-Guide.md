@@ -4,6 +4,7 @@ title:  "Linux Startup Guide"
 date:   2020-03-17 09:13:47 +0530
 category: Blog
 desc: "Windows To Linux Migration Guide"
+description: "Windows To Linux Migration Guide"
 tags: [how-to, linux]
 ---
 <!--end_excerpt-->

@@ -4,9 +4,11 @@ title:  "My Linux Setup"
 date:   2021-07-18 18:33:00 +0530
 tags: [linux]
 desc: "Sharing My Linux Desktop Setup"
+description: "Sharing My Linux Desktop Setup"
 category: Blog
 image:
   src: /assets/images/my_linux_setup/linux.png
+  path: /assets/images/my_linux_setup/linux.png
 ---
 
 <!--end_excerpt-->
