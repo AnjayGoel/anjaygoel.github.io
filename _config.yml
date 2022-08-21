@@ -93,9 +93,14 @@ avatar: ./favicon.png
 # boolean type, the global switch for ToC in posts.
 toc: true
 
-disqus:
-  comments: true  # boolean type, the global switch for posts comments.
-  shortname: 'anjaygoel-github-io'    # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+comments:
+  active: true
+  disqus:
+    shortname: 'anjaygoel-github-io'
+    
+    
+pwa:
+  enabled: true   # the option for PWA feature
 
 paginate: 5
 
