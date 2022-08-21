@@ -94,7 +94,7 @@ avatar: ./favicon.png
 toc: true
 
 comments:
-  active: true
+  active: 'disqus'
   disqus:
     shortname: 'anjaygoel-github-io'
     
