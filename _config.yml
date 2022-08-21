@@ -94,10 +94,16 @@ avatar: ./favicon.png
 toc: true
 
 comments:
-  active: 'disqus'
-  disqus:
-    shortname: 'anjaygoel-github-io'
-    
+  active: 'giscus'   
+  giscus:
+    repo: 'AnjayGoel/anjaygoel.github.io'
+    repo_id: 'MDEwOlJlcG9zaXRvcnkzNzY2MjI0MjY='
+    category: 'General'
+    category_id: 'DIC_kwDOFnLNWs4CQ8t3'
+    mapping: 'title'         # optional, default to 'pathname'
+    input_position: 'top'   # optional, default to 'bottom'
+    lang:          # optional, default to the value of `site.lang`
+
     
 pwa:
   enabled: true   # the option for PWA feature
