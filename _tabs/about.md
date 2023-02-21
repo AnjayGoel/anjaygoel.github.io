@@ -1,7 +1,6 @@
 ---
-icon: fas fa-info
+icon: fas fa-info-circle
 order: 4
-title: About me
 ---
 
 <font size="5">Hi!</font>
