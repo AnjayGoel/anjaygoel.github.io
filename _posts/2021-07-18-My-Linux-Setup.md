@@ -7,8 +7,8 @@ desc: "Sharing My Linux Desktop Setup"
 description: "Sharing My Linux Desktop Setup"
 category: Blog
 image:
-  src: /assets/images/my_linux_setup/linux.png
-  path: /assets/images/my_linux_setup/linux.png
+  src: /assets/images/my_linux_setup/linux.jpg
+  path: /assets/images/my_linux_setup/linux.jpg
 ---
 
 <!--end_excerpt-->
