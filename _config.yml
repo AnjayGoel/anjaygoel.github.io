@@ -43,8 +43,9 @@ social:
   email: anjaygoel@gmail.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/anjay_goel      # change to your twitter homepage
-    - https://github.com/AnjayGoel       # change to your github homepage
+    - https://www.linkedin.com/in/AnjayGoel
+    - https://github.com/AnjayGoel
+    - https://twitter.com/anjay_goel    # change to your github homepage
     - https://facebook.com/anjay.goel.23
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
@@ -94,7 +95,7 @@ avatar: ./favicon.png
 toc: true
 
 comments:
-  active: 'giscus'   
+  active: 'giscus'
   giscus:
     repo: 'AnjayGoel/anjaygoel.github.io'
     repo_id: 'MDEwOlJlcG9zaXRvcnkzNzY2MjI0MjY='
@@ -104,7 +105,7 @@ comments:
     input_position: 'top'   # optional, default to 'bottom'
     lang:          # optional, default to the value of `site.lang`
 
-    
+
 pwa:
   enabled: true   # the option for PWA feature
 
