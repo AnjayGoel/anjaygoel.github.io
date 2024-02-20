@@ -48,7 +48,7 @@ ALTER TABLE users
 ADD CONSTRAINT unique_username_constraint UNIQUE (username);
 ```
 
-Now you decide to soft-delete users (mark a user as deleted instead of actually deleting them from the DB), so you naively add a new field `STATE`. Whenever a user is deleted, their `state` is set to `DELETED`.
+Now you decide to soft-delete users (mark a user as deleted instead of actually deleting them from the DB), so you naively add a new field `state`. Whenever a user is deleted, their `state` is set to `DELETED`.
 
 ```sql
 ALTER TABLE users
