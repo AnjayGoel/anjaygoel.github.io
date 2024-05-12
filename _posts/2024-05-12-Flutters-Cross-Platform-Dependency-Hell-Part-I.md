@@ -22,9 +22,9 @@ You can try the following suggestion to make the pubspec resolve:
 * Consider downgrading your constraint on mixpanel_flutter: flutter pub add mixpanel_flutter:^2.2.0
 ```
 
-It's difficult to resist the urge to bang your head on the desk when you encounter an error like this. This is how Flutter reports a dependency conflict. A dependency conflict, while frustrating, is nothing uncommon. Even more so when using a cross-platform framework, where you have to depend on third-party implementations of some popular libraries. But this one is incredibly ridiculous. Before diving into it, Lets take a brief look at how packages work in Flutter.
+It's difficult to resist the urge to bang your head on the desk when you encounter an error like this. This is how Flutter reports a dependency conflict. A dependency conflict, while frustrating, is nothing uncommon. Even more so when using a cross-platform framework, where you have to depend on third-party implementations of some popular libraries. But this one is incredibly ridiculous. But, before diving into it, Lets take a brief look at how packages work in Flutter.
 
-There are two ways to develop a flutter package that relies on platform-specific APIs:
+There are two ways to develop a flutter package that relies on native APIs:
 
 **1) The simple approach:**
 
@@ -136,6 +136,6 @@ Observe that `mixpanel_flutter` depends on `js ^0.7.0`. While `flutter_facebook_
 
 By now, you must have realized why this conflict is so ridiculous.`flutter_secure_storage_web` is a transitive dependency of `facebook_auth_desktop` which targets a entirely different platform, hence it's redundant. And `facebook_auth_desktop` itself, in turn, is a transitive dependency of `my_app` which also targets a different platform.
 
-Thus, both `flutter_secure_storage_web` and `facebook_auth_desktop` are redundant for `my_app`, yet they are a part of its dependency tree. So I am left to solve a conflict because of dependencies that will never be used in my project.
+Thus, while both `flutter_secure_storage_web` and `facebook_auth_desktop` are a part for `my_app`'s, dependency tree, they are completely redundant. So I am left to solve a conflict because of dependencies that will never be used in my project.
 
 Thankfully, I found a hack to fix the issue in the package's GitHub repo. Adding the latest version of the `js` package in the pubspec under `dependency_overrides` fixes the issue. Nevertheless, the problem should have never arisen; Flutter could have intelligently pruned the dependency tree by ignoring platform-specific dependencies not meant for my target platforms.

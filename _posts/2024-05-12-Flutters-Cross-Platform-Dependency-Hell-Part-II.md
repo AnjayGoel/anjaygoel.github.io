@@ -8,7 +8,7 @@ desc: "---"
 description: "---"
 ---
 
-In the last blog post, I highlighted how flutter includes all the platform-specific implementations in the dependency
+In the last blog post, I wrote about how flutter includes all the platform-specific implementations in the dependency
 tree even when you don't target those platforms. Thus causes unnecessary dependency conflicts. In this post, I will show
 another annoying issue about how flutter handles native dependencies, particular in iOS.
 
