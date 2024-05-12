@@ -22,13 +22,17 @@ You can try the following suggestion to make the pubspec resolve:
 * Consider downgrading your constraint on mixpanel_flutter: flutter pub add mixpanel_flutter:^2.2.0
 ```
 
-It's difficult to resist the urge to bang your head on the desk when you encounter an error like this. This is how Flutter reports a dependency conflict. A dependency conflict, while frustrating, is nothing uncommon. Even more so when using a cross-platform framework, where you have to depend on third-party implementations of some popular libraries. But this one is incredibly ridiculous. But, before diving into it, Lets take a brief look at how packages work in Flutter.
+It's difficult to resist the urge to bang your head on the desk when you encounter an error like this. This is how
+Flutter reports a dependency conflict. A dependency conflict, while frustrating, is nothing uncommon. Even more so when
+using a cross-platform framework, where you have to depend on third-party implementations of some popular libraries. But
+this one is incredibly ridiculous. But, before diving into it, Lets take a brief look at how packages work in Flutter.
 
 There are two ways to develop a flutter package that relies on native APIs:
 
 **1) The simple approach:**
 
-Put the platform-specific implementations in the package under the platform's folder. See [mixpanel-flutter](https://github.com/mixpanel/mixpanel-flutter/tree/main).
+Put the platform-specific implementations in the package under the platform's folder.
+See [mixpanel-flutter](https://github.com/mixpanel/mixpanel-flutter/tree/main).
 
 ```
    mixpanel_flutter 2.3.1
@@ -45,13 +49,17 @@ Put the platform-specific implementations in the package under the platform's fo
 
 **2) The recommended way:**
 
-Separate out the platform-specific implementations into different packages. This is called a federated plugin in Flutter. It consists of the following:
+Separate out the platform-specific implementations into different packages. This is called a federated plugin in
+Flutter. It consists of the following:
 
--  The **app-facing package**, which the plugin's user adds to their pubspec.
+- The **app-facing package**, which the plugin's user adds to their pubspec.
 - The **platform-specific package(s)** which has the native code, the app-facing package depeneds on these packages.
-- And the **platform interface package**, which declares a common interface that any platform package must implement to support the app-facing package.        
+- And the **platform interface package**, which declares a common interface that any platform package must implement to
+  support the app-facing package.
 
-For example, See the dependency tree of [google sign in]([packages/packages/google_sign_in at main · flutter/packages · GitHub](https://github.com/flutter/packages/tree/main/packages/google_sign_in)) package
+For example, See the dependency tree
+of [google sign in](https://github.com/flutter/packages/tree/main/packages/google_sign_in)
+package
 
 ```
 ├── google_sign_in 6.2.1
@@ -76,7 +84,8 @@ For example, See the dependency tree of [google sign in]([packages/packages/goog
 │   └── flutter...
 ```
 
-Now, let's go back to the original issue. `my_app` is a flutter app **targeting only Android & iOS**. It depends on two packages `flutter_facebook_auth` & `mixpanel_flutter` . The full dependency tree looks like this:
+Now, let's go back to the original issue. `my_app` is a flutter app **targeting only Android & iOS**. It depends on two
+packages `flutter_facebook_auth` & `mixpanel_flutter` . The full dependency tree looks like this:
 
 ```
 my_app 1.0.0+1
@@ -132,10 +141,20 @@ my_app 1.0.0+1
     └── js...
 ```
 
-Observe that `mixpanel_flutter` depends on `js ^0.7.0`. While `flutter_facebook_auth` has a platform-specific implementation (for macOS) `facebook_auth_desktop`, which in turn depends on `flutter_secure_storage`, which has a platform-specific implementation `flutter_secure_storage_web` (for web!) which in turn depends on `js ^0.6.3`. This causes the dependency conflict!
+Notice how adding a single package leads to a cascade of redundant dependencies meant for different platforms, which are
+not even the targets of `my_app`!
 
-By now, you must have realized why this conflict is so ridiculous.`flutter_secure_storage_web` is a transitive dependency of `facebook_auth_desktop` which targets a entirely different platform, hence it's redundant. And `facebook_auth_desktop` itself, in turn, is a transitive dependency of `my_app` which also targets a different platform.
+Observe that `mixpanel_flutter` depends on `js ^0.7.0`. While `my_app` also has a transitive dependency
+on `facebook_auth_desktop` which in turn has a transitive dependency on `flutter_secure_storage_web`!
+And since `flutter_secure_storage_web` uses `js ^0.6.3`, it's incompatible with  `mixpanel_flutter`. Thus causing the
+dependency conflict.
 
-Thus, while both `flutter_secure_storage_web` and `facebook_auth_desktop` are a part for `my_app`'s, dependency tree, they are completely redundant. So I am left to solve a conflict because of dependencies that will never be used in my project.
+By now, you must have realized why this situation is so ridiculous. Why does `my_app` need to depend
+on `facebook_auth_desktop` and `flutter_secure_storage_web` at all, when it doesn't even target desktop or web
+platforms? Because of this behavior, I am left to solve a dependency conflict arising out of redundant dependencies that
+will never be used in the project.
 
-Thankfully, I found a hack to fix the issue in the package's GitHub repo. Adding the latest version of the `js` package in the pubspec under `dependency_overrides` fixes the issue. Nevertheless, the problem should have never arisen; Flutter could have intelligently pruned the dependency tree by ignoring platform-specific dependencies not meant for my target platforms.
+Thankfully, I found a hack to fix the issue in the package's GitHub repo. Adding the latest version of the `js` package
+in the pubspec under `dependency_overrides` fixes the issue. Nevertheless, the problem should have never arisen; Flutter
+could have intelligently pruned the dependency tree by ignoring platform-specific dependencies not meant for my target
+platforms.
