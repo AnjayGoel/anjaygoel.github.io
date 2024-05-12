@@ -33,7 +33,7 @@ following error:
         FBSDKCoreKit (= 17.0.0)
 ```
 
-What's happening here is that both the packages depend on different major versions of native `FBSDKCoreKit` CocoaPods (
-The native facebook iOS SDK). Since flutter is only resolving the dart dependencies, it didn't even know about the
-dependency conflict in the native packages. If a package updates the major versions of a native dependency in a
-minor/patch update, such issues will break your builds the next time you run `flutter pub upgrade`
+What's happening here is that both the packages depend on a different major versions of native `FBSDKCoreKit`
+CocoaPod (The native facebook iOS SDK). Since flutter is only resolving the dart dependencies, it didn't even know
+about the dependency conflict in the native packages. If a package updates the major versions of a native dependency in
+a minor/patch update, such issues may break your builds the next time you run `flutter pub upgrade`
