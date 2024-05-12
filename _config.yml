@@ -101,7 +101,7 @@ social_preview_image: ./favicon # string, local or CORS resources
 toc: true
 
 comments:
-  active: 'giscus'
+  provider: 'giscus'
   giscus:
     repo: 'AnjayGoel/anjaygoel.github.io'
     repo_id: 'MDEwOlJlcG9zaXRvcnkzNzY2MjI0MjY='
