@@ -4,8 +4,8 @@ title: "Flutter's Cross Platform Dependency Hell - Part I"
 date: 2024-05-12 00:00:00 +0530
 category: Blog
 tags: [ flutter ]
-desc: "Issue with the way flutter handles packages with platform-specific implementations"
-description: "Issue with the way flutter handles packages with platform-specific implementations"
+desc: "Issue with the way flutter handles federated plugins"
+description: "Issue with the way flutter handles federated plugins"
 ---
 
 ```
