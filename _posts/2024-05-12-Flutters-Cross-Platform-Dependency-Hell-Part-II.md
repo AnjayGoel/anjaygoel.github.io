@@ -4,12 +4,12 @@ title: "Flutter's Cross Platform Dependency Hell - Part II"
 date: 2024-05-12 00:00:00 +0530
 category: Blog
 tags: [ flutter ]
-desc: "---"
-description: "---"
+desc: "Flutter pub doesn't play well with CocoaPods and it's a nightmare"
+description: "Flutter pub doesn't play well with CocoaPods and it's a nightmare"
 ---
 
 In the last blog post, I wrote about how flutter includes all the platform-specific implementations in the dependency
-tree even when you don't target those platforms. Thus causes unnecessary dependency conflicts. In this post, I will show
+tree even when you don't target those platforms. Thus causing unnecessary dependency conflicts. In this post, I will show
 another annoying issue about how flutter handles native dependencies, particular in iOS.
 
 If you add the following packages in your project and do a `flutter pub get`:
