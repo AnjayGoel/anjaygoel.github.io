@@ -66,6 +66,11 @@ analytics:
   goatcounter:
     id: anjaygoel
 
+# Page views settings
+pageviews:
+  provider: goatcounter
+
+
 
 # Prefer color scheme setting.
 #
