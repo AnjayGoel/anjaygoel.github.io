@@ -1,15 +1,15 @@
 ---
 layout: post
 title: "iOS Keychain: It's not a bug it's a feature"
-date: 2024-09-07 00:00:00 +0530
+date: 2024-09-07 19:30:00 +0530
 category: Blog
 tags: [ til, iOS, app-development ]
-desc: "Undocumented behavior of iOS keychain that lets apps persist data even after uninstallation"
-description: "Undocumented behavior of iOS keychain that lets apps persist data even after uninstallation"
+desc: "Unintended behavior of iOS keychain that lets apps persist data even after uninstallation"
+description: "Unintended behavior of iOS keychain that lets apps persist data even after uninstallation"
 ---
 
 A while ago at work, I ran into a situation where we had to disable backup & restore for our app. We had to make
-sure a fresh install didn't have an account already logged in from a previous installation.
+sure a fresh install didn't restore the user account from a previous installation.
 Doing this is pretty straightforward on Android. Just set `allowBackup` to false in the manifest.
 
 ```xml
