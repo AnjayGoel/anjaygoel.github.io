@@ -23,7 +23,7 @@ For iOS, things weren't that simple. I tried clearing the Shared Preference/User
 backup & even disabling iCloud backup on the whole device. Nothing worked. Reinstalling the app logged in the old user.
 
 Digging deeper into Stackoverflow & other developer forums, I found out that Firebase authentication credentials are
-stored in the iOS keychain, as they should be. But **iOS actually persists the app's keychain data, even if you
+stored in the iOS keychain, as they should be. But **iOS actually persists the app's keychain data, even after you
 uninstall it!**
 
 Apparently, this undocumented & unintended behavior has existed for a long time, even though it might be a privacy
