@@ -22,11 +22,6 @@ title: Anjay Goel
 author: Anjay Goel
 email: anjay.goel@gmail.com                          # the main title
 
-tagline: Suggest Me A Tagline   # it will display as the sub-title
-
-description: >-
-  Anjay's Blog.
-
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://anjaygoel.github.io'
 
@@ -132,7 +127,7 @@ paginate: 6
 
 kramdown:
   syntax_highlighter: rouge
-  syntax_highlighter_opts:   # Rouge Options › https://github.com/jneen/rouge#full-options
+  syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
     css_class: highlight
     # default_lang: console
     span:
@@ -148,8 +143,7 @@ collections:
 
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ''          # An empty string here means all files in the project
       type: posts
     values:
@@ -159,13 +153,11 @@ defaults:
       # DO NOT modify the following parameter unless you are confident enough
       # to update the code of all other post links in this project.
       permalink: /posts/:title/
-  -
-    scope:
+  - scope:
       path: _drafts
     values:
       comments: false
-  -
-    scope:
+  - scope:
       path: ''
       type: tabs             # see `site.collections`
     values:
@@ -187,7 +179,7 @@ compress_html:
   profile: false
   blanklines: false
   ignore:
-    envs: [development]
+    envs: [ development ]
 
 exclude:
   - '*.gem'
@@ -201,7 +193,7 @@ exclude:
   - package*.json
 
 jekyll-archives:
-  enabled: [tags]
+  enabled: [ tags ]
   layouts:
     tag: tag
   permalinks:
