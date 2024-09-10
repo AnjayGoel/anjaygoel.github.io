@@ -2,7 +2,6 @@
 layout: post
 title:  "IIT-KGP: An update on using self-hosted VPNs"
 date:   2022-08-21 12:25:47 +0530
-category: Blog
 tags: [iit-kgp,how-to]
 desc: "Steps to use your organization's VPN and also enable UDP based VPNs on the campus network."
 description: "Steps to use your organization's VPN and also enable UDP based VPNs on the campus network."

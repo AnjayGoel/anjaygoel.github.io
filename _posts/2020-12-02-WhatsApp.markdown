@@ -2,7 +2,6 @@
 layout: post
 title:  "WhatsApp's New Privacy Policy And Why It Matters"
 date:   2021-01-09 20:51:47 +0530
-category: Blog
 desc: "Uproar regarding WhatsApp's new privacy policy and why it is time to switch to better and more privacy centered alternatives."
 description: "Uproar regarding WhatsApp's new privacy policy and why it is time to switch to better and more privacy centered alternatives."
 tags: [opinion]

@@ -5,7 +5,6 @@ date:   2021-08-08 01:20:00 +0530
 tags: [cryptocurrency,opinion]
 desc: "it's time we began to critically question cryptocurrency's intrinsic value, use cases, and whether it delivers on its promise."
 description: "it's time we began to critically question cryptocurrency's intrinsic value, use cases, and whether it delivers on its promise."
-category: Blog
 image:
   src: /assets/images/crypto/crypto.jpg
   path: /assets/images/crypto/crypto.jpg

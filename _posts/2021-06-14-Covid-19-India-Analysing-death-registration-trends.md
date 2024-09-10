@@ -5,7 +5,6 @@ date:   2021-06-14 20:50:00 +0530
 tags: [covid,data-visualization]
 desc: "How Reliable Are Official Figures? You must have asked this to yourself at some point. Well, this post might give you some answers."
 description: "How Reliable Are Official Figures? You must have asked this to yourself at some point. Well, this post might give you some answers."
-category: Blog
 image:
   src: /assets/images/covid_19_india/header.png
   path: /assets/images/covid_19_india/header.png

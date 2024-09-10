@@ -2,7 +2,6 @@
 layout: post
 title: "Flutter's Cross Platform Dependency Hell - Part II"
 date: 2024-05-12 00:00:00 +0530
-category: Blog
 tags: [ flutter,app-development ]
 desc: "Flutter pub doesn't play well with CocoaPods"
 description: "Flutter pub doesn't play well with CocoaPods"

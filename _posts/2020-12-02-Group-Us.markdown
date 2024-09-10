@@ -2,7 +2,6 @@
 layout: post
 title:  "Group Us"
 date:   2020-12-02 00:53:47 +0530
-category: Showcase
 desc: "A web-app that automates group formation based on preferences for projects/assignments etc."
 description: "A web-app that automates group formation based on preferences for projects/assignments etc."
 redirect_to: https://anjaygoel.github.io/GroupUs/

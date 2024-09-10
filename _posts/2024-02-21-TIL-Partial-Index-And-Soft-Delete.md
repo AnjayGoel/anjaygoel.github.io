@@ -2,7 +2,6 @@
 layout: post
 title: "TIL: Partial Indexes And Soft Delete"
 date: 2024-02-21 00:00:00 +0530
-category: Blog
 tags: [ til,sql,how-to ]
 desc: "Exploring partial indexes in SQL."
 description: "Exploring partial indexes in SQL."

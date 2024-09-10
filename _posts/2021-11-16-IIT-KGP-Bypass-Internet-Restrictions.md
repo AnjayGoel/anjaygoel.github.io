@@ -5,7 +5,6 @@ date:   2021-11-16 01:20:00 +0530
 tags: [how-to,iit-kgp]
 desc: "Bypassing Network Restrictions Via A Self Hosted VPN Server"
 description: "Bypassing Network Restrictions Via A Self Hosted VPN Server"
-category: Blog
 image:
   src: /assets/images/iit_kgp_vpn/header.jpg
   path: /assets/images/iit_kgp_vpn/header.jpg
