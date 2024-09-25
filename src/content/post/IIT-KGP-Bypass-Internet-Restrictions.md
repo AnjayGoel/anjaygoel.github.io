@@ -6,6 +6,7 @@ description: "Bypassing Network Restrictions Via A Self Hosted VPN Server"
 coverImage:
   src: "../../assets/images/iit_kgp_vpn/header.jpg"
   alt: "IIT KGP VPN"
+slug: "IIT-KGP-Bypass-Internet-Restrictions"
 ---
 
 <!--end_excerpt-->

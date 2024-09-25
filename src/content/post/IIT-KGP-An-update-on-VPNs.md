@@ -3,6 +3,7 @@ title:  "IIT-KGP: An update on using self-hosted VPNs"
 publishDate:   2022-08-21 12:25:47 +0530
 tags: [iit-kgp,how-to]
 description: "Steps to use your organization's VPN and also enable UDP based VPNs on the campus network."
+slug: IIT-KGP-An-update-on-VPNs
 ---
 <!--end_excerpt-->
 **Update (9th May 2023)**: As pointed out in the comments, use port 123 for UDP as 19302 no longer works. For future reference, use nmap to find open ports.
