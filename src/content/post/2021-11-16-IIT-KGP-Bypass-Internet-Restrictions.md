@@ -3,9 +3,6 @@ title:  "IIT KGP: Bypassing network restrictions without compromising on interne
 publishDate:   2021-11-16 01:20:00 +0530
 tags: [how-to,iit-kgp]
 description: "Bypassing Network Restrictions Via A Self Hosted VPN Server"
-image:
-  src: /assets/images/iit_kgp_vpn/header.jpg
-  path: /assets/images/iit_kgp_vpn/header.jpg
 ---
 
 <!--end_excerpt-->

@@ -4,10 +4,6 @@ publishDate:   2022-04-11 01:17:00 +0530
 tags: []
 desc: "Revealing the complexities and limitations of the seemingly simple process of voting and choosing a winner"
 description: "Revealing the complexities and limitations of the seemingly simple process of voting and choosing a winner"
-image:
-  src: /assets/images/count_votes/header.jpg
-  path: /assets/images/count_votes/header.jpg
-
 ---
 
 <!--end_excerpt-->

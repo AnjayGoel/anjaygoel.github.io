@@ -4,5 +4,4 @@ publishDate:   2019-05-15 01:30:47 +0530
 tags: [hello-world]
 description: "Hello World Of Blogs"
 ---
-<!--end_excerpt-->
-Hi There! So I have finally setup my first blog. As per the tradition this is a hello world post.
+Hi There! So I have finally set up my first blog. As per the tradition, this is a hello world post.
