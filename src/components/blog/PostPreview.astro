@@ -14,14 +14,10 @@ const postDate = getPostSortDate(post);
 ---
 
 <FormattedDate class="min-w-[120px] text-gray-600 dark:text-gray-400" date={postDate} />
-<br />
 <Tag>
 	{post.data.draft && <span class="text-red-500">(Draft) </span>}
 	<a class="cactus-link text-accent" data-astro-prefetch href={`/posts/${post.slug}/`}>
 		{post.data.title}
 	</a>
 </Tag>
-<br />
-<Tag>
-	{withDesc && <p class="line-clamp-3 italic">{post.data.description}</p>}
-</Tag>
+{withDesc && <p class="line-clamp-3 italic">{post.data.description}</p>}
