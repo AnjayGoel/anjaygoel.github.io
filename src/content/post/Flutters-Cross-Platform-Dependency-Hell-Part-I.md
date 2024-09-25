@@ -3,6 +3,7 @@ title: "Flutter's Cross Platform Dependency Hell - Part I"
 publishDate: 2024-05-12 00:00:00 +0530
 tags: [ flutter,app-development ]
 description: "Issue with the way flutter handles federated plugins"
+slug: Flutters-Cross-Platform-Dependency-Hell-Part-I
 ---
 
 ```

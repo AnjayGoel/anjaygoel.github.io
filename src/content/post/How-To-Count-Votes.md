@@ -6,6 +6,7 @@ description: "Revealing the complexities and limitations of the seemingly simple
 coverImage:
   src: "../../assets/images/count_votes/header.jpg"
   "alt": "Voting"
+slug: How-To-Count-Votes
 ---
 
 <!--end_excerpt-->

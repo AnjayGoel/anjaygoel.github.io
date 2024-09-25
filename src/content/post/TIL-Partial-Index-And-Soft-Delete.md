@@ -3,6 +3,7 @@ title: "TIL: Partial Indexes And Soft Delete"
 publishDate: 2024-02-21 00:00:00 +0530
 tags: [ til,sql,how-to ]
 description: "Exploring partial indexes in SQL."
+slug: TIL-Partial-Index-And-Soft-Delete
 ---
 
 A partial index is a powerful feature that allows you to create an index only on a subset of rows of the given table based on some conditions. Thus reducing the size of the index and optimizing queries. Its syntax is as follows (in PostgreSQL):
