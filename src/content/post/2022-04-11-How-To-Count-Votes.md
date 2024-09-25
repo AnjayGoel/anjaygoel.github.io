@@ -2,8 +2,10 @@
 title:  "How to count votes?"
 publishDate:   2022-04-11 01:17:00 +0530
 tags: []
-desc: "Revealing the complexities and limitations of the seemingly simple process of voting and choosing a winner"
 description: "Revealing the complexities and limitations of the seemingly simple process of voting and choosing a winner"
+coverImage:
+  src: "../../assets/images/count_votes/header.jpg"
+  "alt": "Voting"
 ---
 
 <!--end_excerpt-->

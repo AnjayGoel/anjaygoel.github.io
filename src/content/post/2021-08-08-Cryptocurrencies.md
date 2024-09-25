@@ -3,6 +3,9 @@ title:  "Cryptocurrencies: Questioning its need, limitations, and divergence fro
 publishDate:   2021-08-08 01:20:00 +0530
 tags: [cryptocurrency,opinion]
 description: "it's time we began to critically question cryptocurrency's intrinsic value, use cases, and whether it delivers on its promise."
+coverImage:
+  src: "../../assets/images/crypto/crypto.jpg"
+  alt: "Cryptocurrency"
 ---
 
 <!--end_excerpt-->

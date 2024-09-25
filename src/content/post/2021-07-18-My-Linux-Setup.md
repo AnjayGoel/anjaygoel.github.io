@@ -3,6 +3,9 @@ title:  "My Linux Setup"
 publishDate:   2021-07-18 18:33:00 +0530
 tags: [linux]
 description: "Sharing My Linux Desktop Setup"
+coverImage:
+  src: "../../assets/images/my_linux_setup/linux.jpg"
+  alt: "My Linux Desktop"
 ---
 
 <!--end_excerpt-->
