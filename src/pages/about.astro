@@ -2,6 +2,7 @@
 import {Image} from "astro:assets";
 import aboutImg from "@/assets/about-astro.png";
 import PageLayout from "@/layouts/Base.astro";
+import SocialList from "../components/SocialList.astro";
 
 const meta = {
   description: "Anjay Goel",
@@ -19,4 +20,6 @@ const meta = {
       <li>📝 Occasional blogger on tech, economics, and everything in between</li>
     </ul>
   </div>
+  <br/>
+  <SocialList />
 </PageLayout>
