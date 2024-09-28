@@ -22,7 +22,7 @@ import rehypeExternalLinks from "rehype-external-links";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://anjaygoel.github.io",
+	site: "https://anjaygoel.com",
 	image: {
 		domains: ["webmention.io"],
 	},
