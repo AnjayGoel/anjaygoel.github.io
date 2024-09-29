@@ -54,22 +54,45 @@ const { headings } = await post.render();
 	</button>
 </BaseLayout>
 
-<script
-	src="https://giscus.app/client.js"
-	data-repo="anjaygoel/anjaygoel.github.io"
-	data-repo-id="MDEwOlJlcG9zaXRvcnkzNzY2MjI0MjY="
-	data-category="General"
-	data-category-id="DIC_kwDOFnLNWs4CQ8t3"
-	data-mapping="title"
-	data-strict="0"
-	data-reactions-enabled="1"
-	data-emit-metadata="0"
-	data-input-position="top"
-	data-theme="preferred_color_scheme"
-	data-lang="en"
-	crossorigin="anonymous"
-	async
-></script>
+<script>
+	document.addEventListener("DOMContentLoaded", (_) => {
+		const theme = document.documentElement.getAttribute("data-theme");
+		const script = document.createElement("script");
+		script.src = "https://giscus.app/client.js";
+		script.setAttribute("data-repo", "anjaygoel/anjaygoel.github.io");
+		script.setAttribute("data-repo-id", "MDEwOlJlcG9zaXRvcnkzNzY2MjI0MjY=");
+		script.setAttribute("data-category", "General");
+		script.setAttribute("data-category-id", "DIC_kwDOFnLNWs4CQ8t3");
+		script.setAttribute("data-mapping", "title");
+		script.setAttribute("data-strict", "0");
+		script.setAttribute("data-reactions-enabled", "1");
+		script.setAttribute("data-emit-metadata", "0");
+		script.setAttribute("data-input-position", "top");
+		script.setAttribute("data-theme", theme === "dark" ? "dark" : "light");
+		script.setAttribute("data-lang", "en");
+    script.setAttribute("crossorigin", "anonymous");
+    script.async = true;
+    document.addEventListener("theme-change", (e) => {
+      const iframe = document.querySelector("iframe.giscus-frame") as HTMLIFrameElement;
+      if (iframe && iframe.contentWindow) {
+        iframe.contentWindow.postMessage(
+          {
+            giscus: {
+              setConfig: {
+                theme: (e as CustomEvent<{
+                  theme: string
+                }>).detail.theme === "dark" ? "dark" : "light"
+              }
+            }
+          },
+          "https://giscus.app"
+        );
+      }
+		});
+
+		document.body.appendChild(script);
+	});
+</script>
 <script>
 	const scrollBtn = document.getElementById("to-top-btn") as HTMLButtonElement;
 	const targetHeader = document.getElementById("blog-hero") as HTMLDivElement;
