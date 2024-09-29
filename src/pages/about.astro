@@ -1,23 +1,47 @@
 ---
 import PageLayout from "@/layouts/Base.astro";
 import SocialList from "../components/SocialList.astro";
+import { Schema } from "astro-seo-schema";
 
 const meta = {
-  description: "Anjay Goel",
-  title: "About",
+	description: "Anjay Goel",
+	title: "About",
 };
 ---
 
+<Schema
+	item={{
+		"@context": "https://schema.org",
+		"@type": "Person",
+		name: "Anjay Goel",
+		image: "https://anjaygoel.com/icon.png",
+		jobTitle: "Product Engineer",
+		worksFor: {
+			"@type": "Organization",
+			name: "Dashtoon",
+		},
+		alumniOf: {
+			"@type": "CollegeOrUniversity",
+			name: "IIT Kharagpur",
+		},
+		sameAs: ["https://www.linkedin.com/in/anjaygoel/", "https://twitter.com/anjaygoel"],
+	}}
+/>
+
 <PageLayout meta={meta}>
-  <div class="space-y-6">
-    <h1 class="title">About</h1>
-    <ul class="list-inside list-disc space-y-2">
-      <li>🚀 Product Engineer at <a class="text-accent" href="https://www.linkedin.com/company/dashtoon/">Dashtoon</a>
-      </li>
-      <li>🎓 IIT KGP graduate (2023)</li>
-      <li>📝 Occasional blogger on tech, economics, and everything in between</li>
-    </ul>
-  </div>
-  <br/>
-  <SocialList/>
+	<div class="space-y-6">
+		<h1 class="title">About</h1>
+		<ul class="list-inside list-disc space-y-2">
+			<li>
+				🚀 Product Engineer at <a
+					class="text-accent"
+					href="https://www.linkedin.com/company/dashtoon/">Dashtoon</a
+				>
+			</li>
+			<li>🎓 IIT KGP graduate (2023)</li>
+			<li>📝 Occasional blogger on tech, economics, and everything in between</li>
+		</ul>
+	</div>
+	<br />
+	<SocialList />
 </PageLayout>

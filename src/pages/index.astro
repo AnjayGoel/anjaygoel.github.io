@@ -1,40 +1,72 @@
 ---
 import SocialList from "@/components/SocialList.astro";
 import PostPreview from "@/components/blog/PostPreview.astro";
-import {getAllPosts, sortMDByDate} from "@/data/post";
+import { getAllPosts, sortMDByDate } from "@/data/post";
 import PageLayout from "@/layouts/Base.astro";
+import { Schema } from "astro-seo-schema";
 
 const MAX_POSTS = 5;
 const allPosts = await getAllPosts();
 const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 ---
 
-<PageLayout meta={{title: "Home"}}>
-  <section>
-    <h1 class="title mb-6">Hi There!</h1>
-    <p class="mb-4">
-      I am Anjay. I love to write about programming, technology and occasionally other stuff like economics & finance.
-      I hope you find something interesting here. <br> <a class="text-accent" href="/about">More About Me</a>
-    </p>
-    <SocialList/>
-  </section>
-  <section aria-label="Blog post list" class="mt-16">
-    <h2 class="title mb-4 text-xl">Posts</h2>
-    <ul class="space-y-6">
-      {
-        allPostsByDate.map((p) => (
-          <li class="grid gap-1.5">
-            {/* @ts-ignore-next-line - issue with -> @astrojs/check@0.9.3 */}
-            <PostPreview post={p}/>
-          </li>
-        ))
-      }
-    </ul>
-  </section>
-  <nav class="mt-8 flex items-center gap-x-4">
-    <a class="cactus-link text-accent font-bold no-underline hover:underline" data-astro-prefetch href="/posts">
-      {(<span class="sr-only">View All</span>)}
-      {"View All →"}
-    </a>
-  </nav>
+<Schema
+	item={{
+		"@context": "https://schema.org",
+		"@type": "Blog",
+		name: "Anjay Goel",
+		url: "https://anjaygoel.com",
+		description: "Personal Blog",
+		author: {
+			"@type": "Person",
+			name: "Anjay Goel",
+			url: "https://anjaygoel.com/about",
+			image: "https://anjaygoel.com/icon.png",
+		},
+		about: {
+			"@type": "WebPage",
+			name: "About",
+			url: "https://anjaygoel.com/about",
+		},
+		posts: {
+			"@type": "WebPage",
+			name: "About",
+			url: "https://anjaygoel.com/posts",
+		},
+	}}
+/>
+
+<PageLayout meta={{ title: "Home" }}>
+	<section>
+		<h1 class="title mb-6">Hi There!</h1>
+		<p class="mb-4">
+			I am Anjay. I love to write about programming, technology and occasionally other stuff like
+			economics & finance. I hope you find something interesting here. <br />
+			<a class="text-accent" href="/about">More About Me</a>
+		</p>
+		<SocialList />
+	</section>
+	<section aria-label="Blog post list" class="mt-16">
+		<h2 class="title mb-4 text-xl">Posts</h2>
+		<ul class="space-y-6">
+			{
+				allPostsByDate.map((p) => (
+					<li class="grid gap-1.5">
+						{/* @ts-ignore-next-line - issue with -> @astrojs/check@0.9.3 */}
+						<PostPreview post={p} />
+					</li>
+				))
+			}
+		</ul>
+	</section>
+	<nav class="mt-8 flex items-center gap-x-4">
+		<a
+			class="cactus-link font-bold text-accent no-underline hover:underline"
+			data-astro-prefetch
+			href="/posts"
+		>
+			{(<span class="sr-only">View All</span>)}
+			{"View All →"}
+		</a>
+	</nav>
 </PageLayout>
