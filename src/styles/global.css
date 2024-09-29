@@ -8,9 +8,9 @@
 		color-scheme: light;
 		/* https://tailwindcss.com/docs/customizing-colors#using-css-variables */
 		--theme-bg: 0deg 0% 98%;
-		--theme-link: 172deg 18% 41%;
+		--theme-link: 237deg 68% 57%;
 		--theme-text: 203deg 11% 15%;
-		--theme-accent: 351deg 66% 48%;
+		--theme-accent: 237deg 68% 57%;
 		--theme-accent-2: 0deg 0% 7%;
 		--theme-quote: 351deg 66% 48%;
 	}
