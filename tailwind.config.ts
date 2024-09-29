@@ -72,12 +72,10 @@ export default {
 							borderLeftWidth: "0",
 						},
 						code: {
-							"@apply whitespace-nowrap bg-gray-100 text-gray-900 border border border-gray-300 rounded px-0.5":
-								"",
+							"@apply bg-gray-100 text-gray-900 border border border-gray-300 rounded px-0.5": "",
 						},
 						'[data-theme="dark"] code': {
-							"@apply whitespace-nowrap bg-neutral-700 text-neutral-300 border border-neutral-700 rounded px-0.5":
-								"",
+							"@apply bg-neutral-700 text-neutral-300 border border-neutral-700 rounded px-0.5": "",
 						},
 						hr: {
 							borderTopStyle: "dashed",
