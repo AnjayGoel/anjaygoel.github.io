@@ -12,19 +12,22 @@ const meta = {
 <Schema
 	item={{
 		"@context": "https://schema.org",
-		"@type": "Person",
-		name: "Anjay Goel",
-		image: "https://anjaygoel.com/icon.png",
-		jobTitle: "Product Engineer",
-		worksFor: {
-			"@type": "Organization",
-			name: "Dashtoon",
+		"@type": "ProfilePage",
+		mainEntity: {
+			"@type": "Person",
+			name: "Anjay Goel",
+			image: "https://anjaygoel.com/avatar.png",
+			jobTitle: "Product Engineer",
+			worksFor: {
+				"@type": "Organization",
+				name: "Dashtoon",
+			},
+			alumniOf: {
+				"@type": "CollegeOrUniversity",
+				name: "IIT Kharagpur",
+			},
+			sameAs: ["https://www.linkedin.com/in/anjaygoel/", "https://github.com/anjaygoel"],
 		},
-		alumniOf: {
-			"@type": "CollegeOrUniversity",
-			name: "IIT Kharagpur",
-		},
-		sameAs: ["https://www.linkedin.com/in/anjaygoel/", "https://twitter.com/anjaygoel"],
 	}}
 />
 

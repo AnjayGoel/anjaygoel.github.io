@@ -29,7 +29,8 @@ import { Schema } from "astro-seo-schema";
 		headline: title,
 		datePublished: articleDate,
 		dateModified: updatedDate?.toISOString(),
-		image: socialImage,
+    url: `https://anjaygoel.com/posts/${slug}`,
+		image: `https://anjaygoel.com${socialImage}`,
 		author: {
 			"@type": "Person",
 			name: "Anjay Goel",

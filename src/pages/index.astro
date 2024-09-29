@@ -13,7 +13,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 <Schema
 	item={{
 		"@context": "https://schema.org",
-		"@type": "Blog",
+		"@type": "WebSite",
 		name: "Anjay Goel",
 		url: "https://anjaygoel.com",
 		description: "Personal Blog",
@@ -22,16 +22,6 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 			name: "Anjay Goel",
 			url: "https://anjaygoel.com/about",
 			image: "https://anjaygoel.com/icon.png",
-		},
-		about: {
-			"@type": "WebPage",
-			name: "About",
-			url: "https://anjaygoel.com/about",
-		},
-		posts: {
-			"@type": "WebPage",
-			name: "About",
-			url: "https://anjaygoel.com/posts",
 		},
 	}}
 />
