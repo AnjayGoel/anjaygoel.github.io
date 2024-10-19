@@ -1,13 +1,13 @@
 ---
-title: "WIP"
+title: "How do domains work?"
 publishDate: 2024-11-01 19:30:00 +0530
 tags: [ til, internet, dns, cloudflare ]
-description: "WIP               "
+description: "Deep dive into how domains and DNS work"
 draft: true
 ---
 
 I recently moved this blog from GitHub to its own domain, and I was surprised to see how streamlined and fast the whole
-process was. It barely took me 30 minutes to set up everything. Cloudflare did most of the heavy-lifting for me. Since
+process was. It barely took me 30 minutes to set up everything wit Cloudflare doing most of the heavy-lifting. Since
 then, I've been fiddling with the Cloudflare dashboard, its online glossary and other resources to understand how it all
 works. Unsurprisingly, there is a lot going on under the hood. So, I am writing this to summarize what I've learned so
 far.
@@ -22,6 +22,7 @@ domains (called TLDs). It delegates this responsibility to registry operators (S
 These registries in-turn delegate the sales to domain registrars (like Cloudflare, GoDaddy, Namecheap, etc.). These
 registrars use a protocol called [EPP](https://en.wikipedia.org/wiki/Extensible_Provisioning_Protocol) to communicate
 with the registry and perform operations like registering a domain, renewals etc.
+
 Note that there are two types of TLDs:
 gTLDs (generic TLDs) and ccTLDs (country code TLDs). The latter being managed by the respective country. So the ccTLDs
 have their own country-specific set of regulations.
@@ -34,8 +35,9 @@ The hierarchy looks something like this:
 </figure>
 
 
-**Fun fact:** All two-letter top-level domains (like .in, .ai, .io) are ccTLDs. They are the respective ISO two-letter
-country codes. And the [.io domain mightdisappear soon](https://every.to/p/the-disappearance-of-an-internet-domain)
+**Fun fact:** All two-letter top-level domains (like .in, .ai, .io) are ccTLDs. They are the two-letter ISO
+country codes for the respective countries. And
+the [.io domain mightdisappear soon](https://every.to/p/the-disappearance-of-an-internet-domain)
 
 ## How does the domain point to my server?
 
@@ -48,8 +50,14 @@ other kinds of DNS servers in the whole DNS hierarchy:
 * The root servers
 * The TLD servers
 * The authoritative servers
+  <br>
+  Let's see how they all fit together:
 
-Let's see how they all fit together:
+<figure>
+<img src="https://cf-assets.www.cloudflare.com/slt3lc6tev37/1NzaAqpEFGjqTZPAS02oNv/bf7b3f305d9c35bde5c5b93a519ba6d5/what_is_a_dns_server_dns_lookup.png">
+<figcaption>Source: <a href="https://www.cloudflare.com/en-gb/learning/dns/what-is-dns/">Cloudflare: What is DNS?</a>
+</figcaption>
+<br>
 
 1. You enter "example.com" in your browser.
 2. The browser sends a query to the recursive resolver, which in turn asks the root server.
@@ -73,15 +81,21 @@ Let's see how they all fit together:
   dashboard and create DNS records for "example.com", but it won't work because its registry is pointing to a
   different nameserver.
 
+<br>
+
 ### DNS resolution in action
 
-Let's see the query resolution in action by using the `dig` command in your terminal.
+Let's see the query resolution in action by using the `dig` command.
 You can install it using `brew install bind` on macOS and `sudo apt install dnsutils` on Linux.
 Now let's run a trace for "google.co.in":
+
+<br>
 
 ```bash
 dig google.co.in +trace
 ```
+
+<br>
 
 The output will look something like this:
 ![dig trace output](../../assets/images/wip/dig-trace-output.png)
@@ -90,54 +104,64 @@ Let's break down what's happening here:
 
 * The recursive resolver (1.1.1.1, in this case) sends a query to the root servers.
   Note how there are 13 of them, as we discussed earlier.
-* The root server responds with the TLD servers for ".in" (ccTLD for India, the registry is registry.in).
+* The root server responds with the TLD servers for `.in` (ccTLD for India, the registry is registry.in).
 * The recursive resolver then asks the TLD server for the authoritative server for "google.co.in".
 * The TLD server responds with the authoritative servers for "google.co.in".
 * The recursive resolver then asks the authoritative server for the IP address of "google.co.in".
-* The authoritative server responds with the IP address of "google.co.in", 142.250.195.195 in this case.
+* The authoritative server responds with the IP address of "google.co.in", `142.250.195.195` in this case.
 
-There are some other details in the output, like the type of the record (`NS`, `DS`, `RRSIG`), TTL (Time To Live)
+There are some other details in the output, like the type of the record (`NS`, `DS`, `RRSIG`), `TTL` (Time To Live)
 for the records, query time, etc.
 
+<br>
+
 ### The DNS records
+
+<br>
+
 
 The authoritative server holds the actual DNS records for the domain. There are tens of different types of DNS records,
 but the ones you will most commonly use and encounter are given below:
 
-* A: Maps a domain/subdomain to an IPv4 address. This is what's needed to get a website working. For example,
+* `A`: Maps a domain/subdomain to an IPv4 address. This is what's needed to get a website working. For example,
   `dig anjaygoel.com A` will return the IPv4 address of my server: `anjaygoel.com.		115	IN	A	172.67.168.31`
-* AAAA : Maps a domain/subdomain to an IPv6 address.
-* CNAME: Forwards to another domain/subdomain. Its like a reference to another domain.
-* NS: Specifies the authoritative server for the domain. Like in the output above.
-* MX: Redirects email traffic to a mail server.
-* TXT: Holds text data. Often used for verification purposes. For example, Google uses it for domain verification in
+* `AAAA` : Maps a domain/subdomain to an IPv6 address.
+* `CNAME`: Forwards to another domain/subdomain. Its like a reference to another domain.
+* `NS`: Specifies the authoritative server for the domain. Like in the output above.
+* `MX`: Redirects email traffic to a mail server.
+* `TXT`: Holds text data. Often used for verification purposes. For example, Google uses it for domain verification in
   Google Search Console. `dig anjaygoel.com TXT` will the following output:
   ```
   anjaygoel.com.		300	IN	TXT	"v=spf1 -all"
   anjaygoel.com.		300	IN	TXT	"google-site-verification=aTRw2UBBr_jg-Z_WM0kMf6mgXnzrCIgd54xcZtXohIk"
   ```
 * PTR: Maps an IP address to a domain/subdomain. This is useful for reverse DNS lookups. The are stored as <reverse-ip>
-  .in-addr.arpa under the .arpa TLD. You can use `dig -x <ip>` to do a reverse lookup.
+  .in-addr.arpa under the `.arpa` TLD. You can use `dig -x <ip>` to do a reverse lookup.
 
-### DNS as load balancer
+<br>
 
-https://www.cloudflare.com/en-gb/learning/performance/what-is-dns-load-balancing/
+### DNS as load balancer!
+
+<br>
+
+
 Going a little off-topic, But I found this super cool. You can actually use DNS to load balance traffic across multiple
 servers! Based on the load balancing algorithm, the DNS server will return different A/AAAA records for the same domain.
 Lets see this in action:
 
 `dig facebook.com` gives me `57.144.124.1` on my PC. If I do a reverse lookup using `dig -x 57.144.124.1`, I get the
-pointer record as `edge-star-mini-shv-03-bom2.facebook.com.` (Bom as in Bombay or mumbai). But if I do the same on a
+pointer record as `edge-star-mini-shv-03-bom2.facebook.com.` (Bom as in Bombay or Mumbai). But if I do the same on a
 colab notebook, I get a different IP address, `31.13.67.35` and the reverse lookup gives me
-`edge-star-mini-shv-01-mia3.facebook.com`. (mia as in Miami) which is closer to where my colab notebook is running(
+`edge-star-mini-shv-01-mia3.facebook.com`. (mia as in Miami) which is closer to where my colab notebook is running (
 South Carolina).
 
-## How Do I secure It?: HTTPS and SSL/TLS
+<br>
 
-Now that I have got my domain pointing to my server, I need to secure the connection between the client and the server.
+## References
 
-https://www.cloudflare.com/en-gb/learning/dns/glossary/what-is-a-domain-name-registrar/
-https://www.cloudflare.com/en-gb/learning/dns/dns-server-types/
-https://www.cloudflare.com/en-gb/learning/dns/what-is-dns/
-https://www.cloudflare.com/en-gb/learning/dns/glossary/dns-root-server/
-https://www.cloudflare.com/en-gb/learning/dns/dns-records/
+* https://www.cloudflare.com/en-gb/learning/performance/what-is-dns-load-balancing/
+* https://www.cloudflare.com/en-gb/learning/dns/glossary/what-is-a-domain-name-registrar/
+* https://www.cloudflare.com/en-gb/learning/dns/dns-server-types/
+* https://www.cloudflare.com/en-gb/learning/dns/what-is-dns/
+* https://www.cloudflare.com/en-gb/learning/dns/glossary/dns-root-server/
+* https://www.cloudflare.com/en-gb/learning/dns/dns-records/
