@@ -37,7 +37,7 @@ The hierarchy looks something like this:
 
 **Fun fact:** All two-letter top-level domains (like .in, .ai, .io) are ccTLDs. They are the two-letter ISO
 country codes for the respective countries. And
-the [.io domain mightdisappear soon](https://every.to/p/the-disappearance-of-an-internet-domain)
+the [.io domain mightdisappear soon!](https://every.to/p/the-disappearance-of-an-internet-domain)
 
 ## How does the domain point to my server?
 
@@ -78,7 +78,7 @@ other kinds of DNS servers in the whole DNS hierarchy:
   possible because of [Anycast routing](https://www.cloudflare.com/en-gb/learning/dns/what-is-anycast-dns/). Every
   resolver has the IP of these 13 root servers built-in.
 * You can change the authoritative server for your domain via your registrar. In fact, I can go to my cloudflare
-  dashboard and create DNS records for "example.com", but it won't work because its registry is pointing to a
+  dashboard and create DNS records for "example.com", but it won't work because the domain's registry is pointing to a
   different nameserver.
 
 <br>
@@ -104,7 +104,7 @@ Let's break down what's happening here:
 
 * The recursive resolver (1.1.1.1, in this case) sends a query to the root servers.
   Note how there are 13 of them, as we discussed earlier.
-* The root server responds with the TLD servers for `.in` (ccTLD for India, the registry is registry.in).
+* The root server responds with the TLD servers for `.in` (ccTLD for India, the registry is `registry.in`).
 * The recursive resolver then asks the TLD server for the authoritative server for "google.co.in".
 * The TLD server responds with the authoritative servers for "google.co.in".
 * The recursive resolver then asks the authoritative server for the IP address of "google.co.in".
