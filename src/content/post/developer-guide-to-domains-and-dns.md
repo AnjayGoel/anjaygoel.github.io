@@ -8,7 +8,7 @@ draft: true
 
 I recently moved this blog from GitHub to its own domain, and I was surprised to see how streamlined and fast the whole
 process was. It barely took me 30 minutes to set up everything, with Cloudflare doing most of the heavy lifting. Since
-then, I've been fiddling with the Cloudflare dashboard, its online glossary, and other resources to understand how it
+then, I've been tinkering with the Cloudflare dashboard, its online glossary, and other resources to understand how it
 all works. Unsurprisingly, a lot is going on under the hood. I am writing to summarize what I've learned
 so far. Most of this will be rehashing what's already out there with some hands-on examples.
 
