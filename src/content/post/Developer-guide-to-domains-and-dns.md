@@ -35,6 +35,7 @@ The hierarchy looks like this:
 
 **Fun fact:** All two-letter top-level domains (like .in, .ai, .io) are ccTLDs. They are the two-letter ISO
 country codes for the respective countries. And
+the [.io domain might disappear soon](https://every.to/p/the-disappearance-of-an-internet-domain)
 
 ## How does the domain point to my server?
 
