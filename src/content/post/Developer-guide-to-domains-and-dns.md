@@ -3,7 +3,6 @@ title: "A developer's guide to domains and DNS"
 publishDate: 2024-10-20 17:30:00 +0530
 tags: [ til, internet, dns ]
 description: "Deep dive into how domains and DNS work with some hands-on examples using dig"
-draft: true
 ---
 
 I recently moved this blog from GitHub to its own domain, and I was surprised to see how streamlined and fast the whole
