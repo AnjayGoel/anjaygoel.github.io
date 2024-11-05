@@ -2,9 +2,9 @@ import type { APIRoute } from 'astro';
 
 const getRobotsTxt = (sitemapURL: URL) => `
 User-agent: *
-Allow: /
+Disallow: /
 
-Sitemap: ${sitemapURL.href}
+Sitemap: https://anjaygoel.github.io/sitemap-index.xml
 `;
 
 export const GET: APIRoute = ({ site }) => {
