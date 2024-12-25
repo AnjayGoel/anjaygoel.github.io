@@ -2,7 +2,7 @@
 title: "The Myth Of Market Timing"
 publishDate: 2024-12-26 01:50:00 +0530
 tags: [ finance ]
-description: "Trying to time the market with your monthly investments might seem appealing, but does it really pay off? or should you stick to good old-fashioned SIPs"
+description: "Trying to time the market with your monthly investments might seem appealing, but does it really pay off? or should you stick to good old-fashioned SIPs?"
 coverImage:
   src: '../../assets/images/timing-the-market/cover.jpeg'
   alt: 'timing the market'
