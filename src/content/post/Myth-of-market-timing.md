@@ -1,6 +1,6 @@
 ---
 title: "The Myth Of Market Timing"
-publishDate: 2024-12-25 20:50:00 +0530
+publishDate: 2024-12-26 01:50:00 +0530
 tags: [ finance ]
 description: "Trying to time the market with your monthly investments might seem appealing, but does it really pay off? or should you stick to good old-fashioned SIPs"
 coverImage:
@@ -36,17 +36,17 @@ constraints.
 
 #### The Constraints
 
-* We invest a fixed amount every month on Nifty TRI.
-* We must necessarily invest every month, irrespective of the market conditions.
-* We only take long positions, So no liquidating any part of the portfolio.
+* Invest a fixed amount every month on Nifty TRI.
+* Necessarily invest every month, irrespective of the market conditions.
+* Only take long positions, So no liquidating any part of the portfolio.
 
 These constraints might seem restrictive, but they keep things realistic and stop us from blurring the lines between
 passive investing and active trading.
 
 #### Back-testing Steps
 
-* We back-test these strategies for an investment horizon of 1 to 15 years.
-* We run each (strategy, investment horizon) pair for 1000 random time-periods sampled from historical data.
+* Back-test these strategies for an investment horizon of 1 to 15 years.
+* Run each (strategy, investment horizon) pair for 1000 random time-periods sampled from historical data.
 * Calculate the IRR for each iteration and report its average.
 
 #### The Strategies
@@ -58,8 +58,8 @@ We came up with the following strategies:
 * MACD histogram > 0 or month-end
 
 To take things to the extreme, we've included a strategy where you magically end up investing on the exact day the index
-hits its lowest point for the given month. We'll refer to this strategy as `Month Lowest`. This represents the upper
-bound of performance within the given constraints.
+hits its lowest point for the given month. Let's refer to this strategy as `Month Lowest`. This represents the upper
+bound of performance with the given constraints.
 
 ### Back-testing Results
 
