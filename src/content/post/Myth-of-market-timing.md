@@ -54,8 +54,8 @@ passive investing and active trading.
 We came up with the following strategies:
 
 * Invest on 5th/15th/25th of the month
-* Buy on RSI(14) < 35/40/45 or month-end
-* MACD histogram > 0 or month-end
+* Invest when RSI(14) < 35/40/45 or month-end
+* Invest when MACD histogram > 0 or month-end
 
 To take things to the extreme, we've included a strategy where you magically end up investing on the exact day the index
 hits its lowest point for the given month. Let's refer to this strategy as `Month Lowest`. This represents the upper
@@ -65,32 +65,32 @@ bound of performance with the given constraints.
 
 #### IRR Over Different Investment Horizons
 
-|                       | **1 Year** | **3 Years** | **5 Years** | **10 Years** | **15 Years** |
-|-----------------------|-----------:|------------:|------------:|-------------:|-------------:|
-| **Invest on 5th**     |     17.67% |      17.74% |      16.48% |       13.77% |       14.15% |
-| **Invest on 15th**    |     17.41% |      17.72% |      16.47% |       13.77% |       14.17% |
-| **Invest on 25th**    |     17.07% |      17.68% |      16.44% |       13.77% |       14.15% |
-| **Buy on RSI(14)<35** |     16.28% |      17.39% |      16.28% |       13.69% |       14.09% |
-| **Buy on RSI(14)<40** |     16.34% |      17.38% |      16.28% |       13.69% |       14.08% |
-| **Buy on RSI(14)<45** |     16.51% |      17.41% |      16.31% |       13.70% |       14.08% |
-| **MACD Hist > 0**     |     17.92% |      17.88% |      16.55% |       13.82% |       14.20% |
-| **Month Lowest**      |     26.57% |      20.80% |      18.27% |       14.66% |       14.70% |
+|                      | **1 Year** | **3 Years** | **5 Years** | **10 Years** | **15 Years** |
+|----------------------|-----------:|------------:|------------:|-------------:|-------------:|
+| **Invest on 5th**    |     17.67% |      17.74% |      16.48% |       13.77% |       14.15% |
+| **Invest on 15th**   |     17.41% |      17.72% |      16.47% |       13.77% |       14.17% |
+| **Invest on 25th**   |     17.07% |      17.68% |      16.44% |       13.77% |       14.15% |
+| **When RSI(14)<35**  |     16.28% |      17.39% |      16.28% |       13.69% |       14.09% |
+| **When RSI(14)<40**  |     16.34% |      17.38% |      16.28% |       13.69% |       14.08% |
+| **When RSI(14)<45**  |     16.51% |      17.41% |      16.31% |       13.70% |       14.08% |
+| **When MACD Hist>0** |     17.92% |      17.88% |      16.55% |       13.82% |       14.20% |
+| **Month Lowest**     |     26.57% |      20.80% |      18.27% |       14.66% |       14.70% |
 
 **Note**: See [this](https://corporatefinanceinstitute.com/resources/valuation/internal-rate-return-irr/) to learn about
 IRR.
 
 #### Excess Returns Over 'Invest on 5th'
 
-|                       | **1 Year** | **3 Years** | **5 Years** | **10 Years** | **15 Years** |
-|-----------------------|------------|-------------|-------------|--------------|--------------|
-| **Invest on 5th**     | 0.00%      | 0.00%       | 0.00%       | 0.00%        | 0.00%        |
-| **Invest on 15th**    | 0.00%      | \-0.04%     | \-0.04%     | \-0.03%      | 0.15%        |
-| **Invest on 25th**    | \-0.05%    | \-0.07%     | \-0.10%     | \-0.04%      | \-0.01%      |
-| **Buy on RSI(14)<35** | \-0.44%    | \-0.47%     | \-0.48%     | \-0.46%      | \-0.51%      |
-| **Buy on RSI(14)<40** | \-0.48%    | \-0.49%     | \-0.48%     | \-0.47%      | \-0.58%      |
-| **Buy on RSI(14)<45** | \-0.42%    | \-0.44%     | \-0.41%     | \-0.38%      | \-0.57%      |
-| **MACD Hist > 0**     | 0.12%      | 0.19%       | 0.16%       | 0.25%        | 0.46%        |
-| **Month Lowest**      | 4.24%      | 4.40%       | 4.46%       | 4.84%        | 4.87%        |
+|                      | **1 Year** | **3 Years** | **5 Years** | **10 Years** | **15 Years** |
+|----------------------|------------|-------------|-------------|--------------|--------------|
+| **Invest on 5th**    | 0.00%      | 0.00%       | 0.00%       | 0.00%        | 0.00%        |
+| **Invest on 15th**   | 0.00%      | \-0.04%     | \-0.04%     | \-0.03%      | 0.15%        |
+| **Invest on 25th**   | \-0.05%    | \-0.07%     | \-0.10%     | \-0.04%      | \-0.01%      |
+| **When RSI(14)<35**  | \-0.44%    | \-0.47%     | \-0.48%     | \-0.46%      | \-0.51%      |
+| **When RSI(14)<40**  | \-0.48%    | \-0.49%     | \-0.48%     | \-0.47%      | \-0.58%      |
+| **When RSI(14)<45**  | \-0.42%    | \-0.44%     | \-0.41%     | \-0.38%      | \-0.57%      |
+| **When MACD Hist>0** | 0.12%      | 0.19%       | 0.16%       | 0.25%        | 0.46%        |
+| **Month Lowest**     | 4.24%      | 4.40%       | 4.46%       | 4.84%        | 4.87%        |
 
 **Note**: The Excess Return is defined
 as <div style = "text-align:center;">$\text{Excess Returns} = \frac{\text{Final Value of Portfolio (Strategy)}}{\text{Final Value of Portfolio (Invest on 5th)}} - 1$</div>
