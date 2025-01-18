@@ -69,7 +69,7 @@ dig google.co.in +trace
 ```
 
 The output will look something like this:
-![dig trace output](../../assets/images/wip/dig-trace-output.png)
+![dig trace output](../../assets/images/dns/dig-trace-output.png)
 
 Let's break down what's happening here:
 
