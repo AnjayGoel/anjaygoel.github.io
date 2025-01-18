@@ -1,7 +1,7 @@
 ---
 title: "iOS Keychain: It's not a bug it's a feature"
 publishDate: 2024-09-07 19:30:00 +0530
-tags: [ til, iOS, app-development ]
+tags: [ til, iOS, programming ]
 description: "Unintended behavior of iOS keychain that lets apps persist data even after uninstallation"
 ---
 
