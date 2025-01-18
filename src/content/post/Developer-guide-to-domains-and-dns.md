@@ -1,7 +1,7 @@
 ---
 title: "A Developer's Guide to Domains and DNS"
 publishDate: 2024-10-20 17:30:00 +0530
-tags: [ til, internet, dns ]
+tags: [ til, dns ]
 description: "Deep dive into how domains and DNS work with some hands-on examples using dig"
 ---
 

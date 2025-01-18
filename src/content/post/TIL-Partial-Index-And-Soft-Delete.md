@@ -1,7 +1,7 @@
 ---
 title: "TIL: Partial Indexes And Soft Delete"
 publishDate: 2024-02-21 00:00:00 +0530
-tags: [ til,sql,how-to ]
+tags: [ til,sql,programming ]
 description: "Exploring partial indexes in SQL."
 slug: TIL-Partial-Index-And-Soft-Delete
 ---
